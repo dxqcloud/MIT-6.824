@@ -61,6 +61,7 @@ func doMap(
 	file, err := os.Open(inFile)
 	if err != nil {
 		fmt.Println("Open File Error!", inFile)
+		println(jobName, mapTask, nReduce, inFile)
 	}
 
 	data, err := ioutil.ReadAll(file)
